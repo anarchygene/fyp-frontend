@@ -1,0 +1,87 @@
+:root{
+    --main-bg-color: #ffffff;
+    --nav-bg-color: #14213D;
+    --nav-sub-color: #FCA311;
+    --sidebar-color: #e5e5e5;
+    --txt-nav-color: #ffffff;
+    --txt-main-color: #000000;
+  
+    --txt-header-color: #ffffff;
+    --txt-sub-color: #b6c2bd;
+  
+  
+    --hue-navbar: 162;
+    --sat-navbar: 64%;
+    --light-navbar: 19%;
+  
+    --hsl-navbar: HSL(var(--hue-navbar),var(--sat-navbar),var(--light-navbar));
+  
+    --hue-body: 154;
+    --sat-body: 64%;
+    --light-body: 98%;
+  
+      --hsl-body: HSL(var(--hue-body),var(--sat-body),var(--light-body));
+  
+    --hue-button: 164;
+    --sat-button: 62%;
+    --light-button: 31%;
+  
+    --hsl-button: HSL(var(--hue-button),var(--sat-button),var(--light-button));
+    
+    --hsl-button-light: HSL(var(--hue-button),var(--sat-button),45%);
+    
+    --hue-word: 163;
+    --sat-word: 71%;
+    --light-word: 61%;
+  
+    --hsl-word: HSL(var(--hue-word),var(--sat-word),var(--light-word));
+  
+    /* --main-font-bold: 'Libre Baskerville', serif;
+    --main-font-reg: 'Rubik', sans-serif; */
+}
+.user-container--login{
+    height:90vh
+}
+.user-col--login{
+    
+}
+
+.user-col--login--header{
+    display:flex;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+
+.user-span__login--header{
+    color:var(--hsl-navbar);
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin: 0 auto;
+}
+
+.user-form--login{
+    margin: 0 auto;
+
+}
+
+.user-link--login-register{
+    text-decoration:none;
+    color:var(--hsl-navbar);
+    text-align: center;
+}
+
+.user-link--login-register:hover{
+    color:var(--hsl-button)
+
+}
+
+.user-col--login{
+}
+
+.user-card--login{
+    padding: 5vh;
+}
+
+.user-form__button--login {
+   
+}

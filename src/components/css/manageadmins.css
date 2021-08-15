@@ -1,0 +1,18 @@
+    :root{
+        --main-bg-color: #ffffff;
+        --nav-bg-color: #14213D;
+        --nav-sub-color: #FCA311;
+        --sidebar-color: #e5e5e5;
+        --txt-nav-color: #ffffff;
+        --txt-main-color: #000000;
+
+        --txt-header-color: #ffffff;
+        --txt-sub-color: #b6c2bd;
+        /* --main-font-bold: 'Libre Baskerville', serif;
+        --main-font-reg: 'Rubik', sans-serif; */
+    }
+
+    .admin-line-div{
+        padding: 10px;
+        background-color: var(--nav-sub-color);
+    }

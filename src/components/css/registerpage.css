@@ -1,0 +1,87 @@
+:root{
+    --main-bg-color: #ffffff;
+    --nav-bg-color: #14213D;
+    --nav-sub-color: #FCA311;
+    --sidebar-color: #e5e5e5;
+    --txt-nav-color: #ffffff;
+    --txt-main-color: #000000;
+  
+    --txt-header-color: #ffffff;
+    --txt-sub-color: #b6c2bd;
+  
+  
+    --hue-navbar: 162;
+    --sat-navbar: 64%;
+    --light-navbar: 19%;
+  
+    --hsl-navbar: HSL(var(--hue-navbar),var(--sat-navbar),var(--light-navbar));
+  
+    --hue-body: 154;
+    --sat-body: 64%;
+    --light-body: 98%;
+  
+      --hsl-body: HSL(var(--hue-body),var(--sat-body),var(--light-body));
+  
+    --hue-button: 164;
+    --sat-button: 62%;
+    --light-button: 31%;
+  
+    --hsl-button: HSL(var(--hue-button),var(--sat-button),var(--light-button));
+    
+    --hsl-button-light: HSL(var(--hue-button),var(--sat-button),45%);
+    
+    --hue-word: 163;
+    --sat-word: 71%;
+    --light-word: 61%;
+  
+    --hsl-word: HSL(var(--hue-word),var(--sat-word),var(--light-word));
+  
+    /* --main-font-bold: 'Libre Baskerville', serif;
+    --main-font-reg: 'Rubik', sans-serif; */
+}
+
+.user-container{
+    background-color: var(--hsl-body);
+}
+.user-div__header-div{
+    display:flex;
+}
+
+/* .user-col--register{
+    padding-bottom: 7.5vh;
+} */
+
+.user-container--register{
+}
+
+.user-span__header--register{
+    font-weight:bold;
+    font-size:3rem;
+    color:var(--hsl-navbar);
+    padding: 3vh 0;
+}
+
+.user-div__register-form{
+    border-style:solid;
+    border-width:.01rem;
+    border-radius:.25rem;
+    border-color:var(--hsl-navbar);
+    padding: 2.5vh 2.5vw 1.5vh;
+    background-color: white;
+}
+
+.user-card__form-group--register-page {
+    padding-bottom:1.5vh;
+}
+
+.user-span__asterisk{
+    color:red;
+}
+
+.user-card__sub--label{
+    font-size:.5rem;
+}
+
+.user-card__btn--submit{
+    margin-bottom:1.5vh;
+}

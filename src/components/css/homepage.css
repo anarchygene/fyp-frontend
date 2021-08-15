@@ -1,0 +1,51 @@
+:root{
+    --main-bg-color: #ffffff;
+    --nav-bg-color: #14213D;
+    --nav-sub-color: #FCA311;
+    --sidebar-color: #e5e5e5;
+    --txt-nav-color: #ffffff;
+    --txt-main-color: #000000;
+  
+    --txt-header-color: #ffffff;
+    --txt-sub-color: #b6c2bd;
+  
+  
+    --hue-navbar: 162;
+    --sat-navbar: 64%;
+    --light-navbar: 19%;
+  
+    --hsl-navbar: HSL(var(--hue-navbar),var(--sat-navbar),var(--light-navbar));
+  
+    --hue-body: 154;
+    --sat-body: 64%;
+    --light-body: 98%;
+  
+      --hsl-body: HSL(var(--hue-body),var(--sat-body),var(--light-body));
+  
+    --hue-button: 164;
+    --sat-button: 62%;
+    --light-button: 31%;
+  
+    --hsl-button: HSL(var(--hue-button),var(--sat-button),var(--light-button));
+    
+    --hsl-button-light: HSL(var(--hue-button),var(--sat-button),45%);
+    
+    --hue-word: 163;
+    --sat-word: 71%;
+    --light-word: 61%;
+  
+    --hsl-word: HSL(var(--hue-word),var(--sat-word),var(--light-word));
+  
+    /* --main-font-bold: 'Libre Baskerville', serif;
+    --main-font-reg: 'Rubik', sans-serif; */
+  }
+
+  
+.user-span__homepage-slide{
+    display:flex;
+    justify-content:center;
+    font-weight:bold;
+    font-size:1.5rem;
+    padding: 1vh 0;
+    color:var(--hsl-navbar);
+}

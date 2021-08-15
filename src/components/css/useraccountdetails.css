@@ -1,0 +1,115 @@
+:root{
+    --main-bg-color: #ffffff;
+    --nav-bg-color: #14213D;
+    --nav-sub-color: #FCA311;
+    --sidebar-color: #e5e5e5;
+    --txt-nav-color: #ffffff;
+    --txt-main-color: #000000;
+  
+    --txt-header-color: #ffffff;
+    --txt-sub-color: #b6c2bd;
+  
+  
+    --hue-navbar: 162;
+    --sat-navbar: 64%;
+    --light-navbar: 19%;
+  
+    --hsl-navbar: HSL(var(--hue-navbar),var(--sat-navbar),var(--light-navbar));
+  
+    --hue-body: 154;
+    --sat-body: 64%;
+    --light-body: 98%;
+  
+      --hsl-body: HSL(var(--hue-body),var(--sat-body),var(--light-body));
+  
+    --hue-button: 164;
+    --sat-button: 62%;
+    --light-button: 31%;
+  
+    --hsl-button: HSL(var(--hue-button),var(--sat-button),var(--light-button));
+    
+    --hsl-button-light: HSL(var(--hue-button),var(--sat-button),45%);
+    
+    --hue-word: 163;
+    --sat-word: 71%;
+    --light-word: 61%;
+  
+    --hsl-word: HSL(var(--hue-word),var(--sat-word),var(--light-word));
+  
+    /* --main-font-bold: 'Libre Baskerville', serif;
+    --main-font-reg: 'Rubik', sans-serif; */
+  }
+/* {Account Details} */
+.user-form--update-user{
+    border-style:solid;
+    border-width:.25rem;
+    border-color:var(--hsl-navbar);
+    border-radius:.25rem;
+    margin-top:2vh;
+    margin-bottom:2.5vh;
+    padding-top:2vh;
+    padding-bottom:2vh;
+}
+
+.user-form__row--update-user{
+    padding-left:1.5vw;
+}
+
+.user-form__label--update-user{
+    font-weight:bold;
+    font-size:1rem;
+    color:var(--hsl-navbar);
+}
+
+/* {Order History} */
+.user-header--account{
+    margin-left:0;
+}
+.user-table--account{
+    margin-left:0;
+}
+
+/* Update Password */
+.user-form__row--update-password{
+    padding-top:1.5vh;
+    padding-left:1vw; 
+    margin-bottom:2.5vh;
+
+}
+
+.user-span__edit-password-header{
+    font-weight:bold;
+    font-size:1.5rem;
+    color:var(--hsl-navbar);
+    padding-left:0;
+
+}
+
+/* Update User Popup */
+.popup-card__update-user{
+  border-radius:0.25rem;
+  border-color:var(--hsl-navbar);
+  border-style: solid;
+  border-width:0.1rem;
+  background-color:var(--hsl-body);
+  padding: 1.5vh 1.5vw 3vh;
+}
+
+.popup-card__update-user--header{
+  font-weight:bold;
+  font-size:1.5rem;
+  color:var(--hsl-navbar)
+}
+
+.popup-card__button--confirm-update{
+  display:flex;
+  justify-content: center;
+  margin-left:4.75vw;
+  margin-bottom:2vh;
+  background-color:var(--hsl-navbar);
+}
+
+.popup-card__button--cancel-update{
+  margin-left:5vw;
+
+}

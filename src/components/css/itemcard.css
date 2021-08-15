@@ -1,0 +1,93 @@
+:root{
+    --hue-sidebar-option: 161;
+    --sat-sidebar-option: 72%;
+    --light-sidebar-option: 31%;
+  
+  
+    --hsl-main-green: HSL(var(--hue-sidebar-option),var(--sat-sidebar-option),var(--light-sidebar-option));
+
+    --hue-navbar: 162;
+    --sat-navbar: 64%;
+    --light-navbar: 19%;
+
+    --hsl-navbar: HSL(var(--hue-navbar),var(--sat-navbar),var(--light-navbar));
+
+    --hue-body: 154;
+    --sat-body: 64%;
+    --light-body: 98%;
+  
+      --hsl-body: HSL(var(--hue-body),var(--sat-body),var(--light-body));
+}
+
+.user-row-grid{
+    /* display:-ms-inline-grid;
+    display:inline-grid;
+    gap: 2vh 3.5vw; */
+    /* padding-left: 3.75vw;  */
+}
+
+.user-item-card {
+    width: 17rem;
+    min-height:23rem;
+    margin-bottom: 5vh;
+    transition: 0.3s;
+}
+
+
+.user-item-card:hover {
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    /* box-shadow: 1vw 1vh var(--hsl-main-green); */
+}
+
+.user-item-card__body{
+    background-color: var(--hsl-body);
+}
+.user-item-card__subtitle--recipe{
+}
+.user-item-card__subtitle{
+    padding-top:1.5vh;
+}
+
+.user-item-card__link{
+    color: var(--hsl-main-green);
+    transition: 0.3s;
+    /* color: white; */
+}
+.user-item-card__link:hover{
+    text-decoration: none;
+    color: var(--hsl-navbar)
+}
+
+
+
+.user-item-card__span--black{
+    font-weight:normal;
+    color: black
+}
+
+.user-item-card__span--bold{
+    font-weight:bold;
+}
+/* .user-item-card__subtitle{
+    background-color: blue;
+} */
+
+.user-item-card__span{
+    font-size: 1.15rem;
+}
+
+.user-item-card__image {
+    height: 15rem
+}
+
+.admin-item-card {
+    width: 15rem;
+    margin: auto;
+    margin-bottom: 5vh;
+}
+
+.admin-item-card__image {
+    height: 15rem
+}
+

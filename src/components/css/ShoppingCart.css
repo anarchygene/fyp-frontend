@@ -1,0 +1,240 @@
+:root{
+  --main-bg-color: #ffffff;
+  --nav-bg-color: #14213D;
+  --nav-sub-color: #FCA311;
+  --sidebar-color: #e5e5e5;
+  --txt-nav-color: #ffffff;
+  --txt-main-color: #000000;
+
+  --txt-header-color: #ffffff;
+  --txt-sub-color: #b6c2bd;
+
+
+  --hue-navbar: 162;
+  --sat-navbar: 64%;
+  --light-navbar: 19%;
+
+  --hsl-navbar: HSL(var(--hue-navbar),var(--sat-navbar),var(--light-navbar));
+
+  --hue-body: 154;
+  --sat-body: 64%;
+  --light-body: 98%;
+
+    --hsl-body: HSL(var(--hue-body),var(--sat-body),var(--light-body));
+
+  --hue-button: 164;
+  --sat-button: 62%;
+  --light-button: 31%;
+
+  --hsl-button: HSL(var(--hue-button),var(--sat-button),var(--light-button));
+  
+  --hsl-button-light: HSL(var(--hue-button),var(--sat-button),45%);
+  
+  --hue-word: 163;
+  --sat-word: 71%;
+  --light-word: 61%;
+
+  --hsl-word: HSL(var(--hue-word),var(--sat-word),var(--light-word));
+
+  /* --main-font-bold: 'Libre Baskerville', serif;
+  --main-font-reg: 'Rubik', sans-serif; */
+}
+
+/* {{{New Cart CSS}}} */
+
+/* {Shopping Cart Page} */
+
+/* General Styling */
+.user-container--shopping-cart{
+  height:90vh;
+}
+
+.user-col{
+}
+
+.user-row{
+  background-color:var(--hsl-body);
+}
+
+.user-inner-row{
+  /* padding-left: 2.5vw; */
+  padding-top: 2vh;
+}
+
+/* Header */
+.user-span--cart-header{
+  margin-left:5vw;
+  margin-top:5vh;
+  margin-bottom:5vh;
+  font-size:2rem;
+  font-weight:bold;
+}
+
+
+/* Cart Col */
+.user-col--cart{
+  border-style:solid;
+  border-width:.1rem;
+  border-radius:.25rem;
+  border-color:var(--hsl-navbar);
+  margin-left:5vw;
+  padding-bottom:3vh;
+  margin-bottom: 10vh;
+}
+
+.user-col--cart-empty{
+  border-style:solid;
+  border-width:.1rem;
+  border-radius:.25rem;
+  border-color:var(--hsl-navbar);
+  padding-bottom:3vh;
+  margin-right:auto;
+  margin-left:auto;
+  margin-bottom: 10vh;
+}
+
+.user-inner-row--cart{
+  padding-left:2.5vw;
+}
+
+.user-inner-row--cart-header{
+  background-color: var(--hsl-navbar);
+  margin-bottom: 0;
+}
+
+.user-inner-row--label{
+  background-color: var(--hsl-navbar);
+  border-bottom: solid;
+  border-width: .1rem;
+  padding-bottom: 1.5vh;
+}
+
+.user-inner-col--label{
+  margin-left:2.5vw;
+  font-style:italic;
+  color: var(--hsl-body);
+}
+
+.user-span--items-header{
+  font-size:1.25rem;
+  font-weight:bold;
+  color:var(--hsl-body);
+}
+
+.user-inner-row--cart-items{
+}
+
+.user-inner-row--empty{
+  justify-content:center;
+  font-weight:bold;
+  font-size:2rem;
+  color:var(--hsl-navbar);
+}
+
+/* Checkout Col */
+.user-col--checkout{
+  border-style:solid;
+  border-width:.1rem;
+  border-radius:.25rem;
+  border-color:var(--hsl-navbar);
+  height:14.25rem;
+  margin-left:5vw;
+}
+
+.user-inner-row--order-header{
+  background-color: var(--hsl-navbar);
+  padding-bottom: 1.5vh;
+  margin-bottom:0;
+}
+
+.user-inner-row--checkout-button{
+  justify-content: center;
+  padding-left:0;
+}
+
+.user-inner-row--checkout{
+  padding-left:1.5vw;
+}
+
+.user-span--order-header{
+  font-size:1.25rem;
+  font-weight:bold;
+  color:var(--hsl-body);
+}
+
+.user-span--title{
+  font-weight:bold;
+  font-size:1rem;
+}
+
+.user-span--text{
+  font-style:italic;
+}
+
+.user-span--grand-total-text{
+  font-weight:bold;
+}
+
+.user-inner-row__button{
+  margin-right:auto;
+  margin-left:auto;
+}
+
+/* {Shopping Cart Row }*/
+.user-inner-col--product-image{
+  height:7rem;
+  width:1.5rem;
+}
+
+.user-image{
+  width:100%;
+  height:100%;
+}
+
+.user-inner-col--product-details{
+  margin-left:1.5vw;
+  color:var(--hsl-navbar);
+}
+
+.user-inner-col--product-quantity{
+  color:var(--hsl-navbar);
+}
+
+.user-inner-col--product-removal{
+  color:var(--hsl-navbar);
+
+}
+
+.user-inner-col--product-line-price{
+  color:var(--hsl-navbar);
+
+}
+
+/* Delete Popup */
+.popup-card__cart-delete{
+  border-radius:0.25rem;
+  border-color:var(--hsl-navbar);
+  border-style: solid;
+  border-width:0.1rem;
+  background-color:var(--hsl-body);
+  padding: 1.5vh 1.5vw 3vh;
+}
+
+.popup-card__cart-delete--header{
+  font-weight:bold;
+  font-size:1.5rem;
+  color:var(--hsl-navbar)
+}
+
+.popup-card__button--confirm{
+  display:flex;
+  justify-content: center;
+  margin-left:2.5vw;
+  margin-bottom:2vh;
+  background-color:var(--hsl-navbar);
+}
+
+.popup-card__button--cancel{
+  margin-left:3.5vw;
+
+}
