@@ -35,7 +35,7 @@ function ShoppingCartRow({ cartitem, updateSummary }) {
                 .then((json) => {
                     updateSummary(window.localStorage.getItem('user_id'))
                     getCartItemByUserId(localStorage.getItem('user_id')).then((lengthOfCartItems) => {
-                        if (lengthOfCartItems.length == 0) {
+                        if (lengthOfCartItems.length === 0) {
                             window.location.reload()
                         }
                     })
@@ -52,7 +52,7 @@ function ShoppingCartRow({ cartitem, updateSummary }) {
         return (
             <div className="popup-card">
                 <h3 className="popup-card__header">Confirm Delete?</h3>
-                {cartItem.cartitem_id != undefined ?
+                {cartItem.cartitem_id !== undefined ?
                     <Button className="popup-card__button" onClick={() => deleteCartItembyId(cartItem.cartitem_id)} type="submit">OK</Button>
                     : <Button className="popup-card__button" onClick={() => deleteCartItembyId(cartItem.stock_id)} type="submit">OK</Button>}
                 <Button className="popup-card__button" onClick={close}>Cancel</Button>
@@ -152,7 +152,7 @@ function ShoppingCartRow({ cartitem, updateSummary }) {
             }
             fetch(`https://apibounwe.herokuapp.com/cartuser/${user_id}`)
                 .then((res) => {
-                    if (res.status == 404) {
+                    if (res.status === 404) {
                         resolve([])
                     }
                     else {

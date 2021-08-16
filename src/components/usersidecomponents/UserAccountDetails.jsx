@@ -446,7 +446,7 @@ function OrderHistory() {
     })
       .then(res => res.json())
       .then((json) => {
-        if (json.err != "Order history not found") {
+        if (json.err !== "Order history not found") {
           // alert(JSON.stringify(json))
           setOrderHistory(json)
         }
