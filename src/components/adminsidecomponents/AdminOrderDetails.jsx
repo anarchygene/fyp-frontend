@@ -9,6 +9,7 @@ function AdminOrderDetails() {
     const [date, setDate] = useState('')
     const [edit, setEdit] = useState(false)
     const [time, setTime] = useState("")
+    const [total, setTotal] = useState("")
 
 
     const onBack = () => {
@@ -58,6 +59,7 @@ function AdminOrderDetails() {
                 setDeliveryDate(json[0].delivery_date.slice(0, 10))
                 setDate(json[0].delivery_date.slice(0, 10))
                 setTime(json[0].delivery_time_range)
+                setTotal(json[0].total_amount.toFixed(2))
             }).catch((err) => {
                 console.log(err);
             });
@@ -90,7 +92,7 @@ function AdminOrderDetails() {
                     <div>User: {order.first_name} {order.last_name}</div>
                     <div>Delivery Date: {delivery_date}</div>
                     <div>Delivery Time Range: {order.delivery_time_range}</div>
-                    <div>Total Amount: ${order.total_amount.toFixed(2)}</div>
+                    <div>Total Amount: ${total}</div>
                     <div>Shipping Address: {order.shipping_address}</div>
                     <div>Postal Code: {order.postal_code}</div>
                     <div>Order Made: {new Date(order.created_at).toUTCString().substring(0, 22)}</div>
@@ -118,57 +120,57 @@ function AdminOrderDetails() {
                                             </tr>
                                         </thead>
                                         {orderItems.map((orderItem) => (
-                                                    <tr className="admin-table__body-row">
-                                                    <td className="admin-table__body-data">{orderItem.product_name}, {orderItem.stock_size}</td>
-                                                    <td className="admin-table__body-data">{orderItem.quantity}</td>
-                                                </tr>
-                                ))}
-                                </Table>
+                                            <tr className="admin-table__body-row">
+                                                <td className="admin-table__body-data">{orderItem.product_name}, {orderItem.stock_size}</td>
+                                                <td className="admin-table__body-data">{orderItem.quantity}</td>
+                                            </tr>
+                                        ))}
+                                    </Table>
                                 </div>
-                                    : null
+                                : null
                         }
-                                    {
-                                        edit
-                                            ?
-                                            <Form className="admin-form">
-                                                <br></br>
-                                                <Row className="admin-form__row">
-                                                    <p className="admin-form__header">
-                                                        Edit Delivery Date and Time:
-                                                    </p>
-                                                    <div className="admin-form__line"></div>
-                                                </Row>
-                                                <Row className="admin-form__row">
-                                                    <Form.Group>
-                                                        <Form.Label>Delivery Date</Form.Label>
-                                                        <br></br>
-                                                        <Form.Control placeholder="Format: YYYY-MM-DD" onChange={(a) => setDate(a.target.value)}></Form.Control>
-                                                    </Form.Group>
-                                                </Row>
-                                                <Row className="admin-form__row">
-                                                    <Form.Group>
-                                                        <Form.Label>Delivery Time</Form.Label>
-                                                        <Form.Control placeholder="Enter in 24-hr format (16:00-17:00)" onChange={(a) => setTime(a.target.value)}></Form.Control>
-                                                    </Form.Group>
-                                                </Row>
-                                                <Row>
-                                                    <Button type="submit"
-                                                        onClick={() => updateOrderByOrderId({
-                                                            order_id: order.order_id, delivery_date: date,
-                                                            delivery_time_range: time, total_amount: order.total_amount,
-                                                            shipping_address: order.shipping_address, postal_code: order.postal_code, status: order.status
-                                                        })}
-                                                    >Save</Button>
-                                                    <Button variant="danger" onClick={() => setEdit(!edit)}>Cancel</Button>
-                                                </Row>
-                                            </Form>
-                                            : null
-                                    }
-                                </div>
+                        {
+                            edit
+                                ?
+                                <Form className="admin-form">
+                                    <br></br>
+                                    <Row className="admin-form__row">
+                                        <p className="admin-form__header">
+                                            Edit Delivery Date and Time:
+                                        </p>
+                                        <div className="admin-form__line"></div>
+                                    </Row>
+                                    <Row className="admin-form__row">
+                                        <Form.Group>
+                                            <Form.Label>Delivery Date</Form.Label>
+                                            <br></br>
+                                            <Form.Control placeholder="Format: YYYY-MM-DD" onChange={(a) => setDate(a.target.value)}></Form.Control>
+                                        </Form.Group>
+                                    </Row>
+                                    <Row className="admin-form__row">
+                                        <Form.Group>
+                                            <Form.Label>Delivery Time</Form.Label>
+                                            <Form.Control placeholder="Enter in 24-hr format (16:00-17:00)" onChange={(a) => setTime(a.target.value)}></Form.Control>
+                                        </Form.Group>
+                                    </Row>
+                                    <Row>
+                                        <Button type="submit"
+                                            onClick={() => updateOrderByOrderId({
+                                                order_id: order.order_id, delivery_date: date,
+                                                delivery_time_range: time, total_amount: order.total_amount,
+                                                shipping_address: order.shipping_address, postal_code: order.postal_code, status: order.status
+                                            })}
+                                        >Save</Button>
+                                        <Button variant="danger" onClick={() => setEdit(!edit)}>Cancel</Button>
+                                    </Row>
+                                </Form>
+                                : null
+                        }
+                    </div>
                 </div>
             </Container>
         </>
-            )
+    )
 }
 
-            export default AdminOrderDetails
+export default AdminOrderDetails
