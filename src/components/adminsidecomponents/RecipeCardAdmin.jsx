@@ -49,7 +49,7 @@ function RecipeCardAdmin({ id, img, name, prep_time, cooking_time, desc }) {
                     <br></br>
                     Serves 4
                     <Card.Text className="admin-item-card__text">{desc}</Card.Text>
-                    <Link to={`editrecipes/${id}`}>
+                    <Link to={`/editrecipes/${id}`}>
                         <Button className="admin-item-card__button" >Edit</Button>
                     </Link> 
                     <Popup
