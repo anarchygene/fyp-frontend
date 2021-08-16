@@ -41,7 +41,7 @@ function EditRecipes2Row({ index, name, id, optional, qty, recipe_id }) {
                 <td className="admin-table__body-data"></td>
             }
             <td className="admin-table__body-data"><Link to={`/editingredientprod/${id}`}><Button className="admin-table__button">Edit</Button></Link></td>
-            <td className="admin-table__body-data"><Button className="admin-table__button" variant="danger" onClick={()=>deleteIngredientbyId(id).then(window.location.href="http://localhost:3000/editrecipes2/" + recipe_id)}>Delete</Button></td>
+            <td className="admin-table__body-data"><Button className="admin-table__button" variant="danger" onClick={()=>deleteIngredientbyId(id).then(window.location.href="https://celinechow.github.io/fyp-frontend/#//editrecipes2/" + recipe_id)}>Delete</Button></td>
         </tr>
     )
 }

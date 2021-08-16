@@ -189,7 +189,7 @@ function EditIngredientProd() {
                                 updateIngredientbyId(ingredient_id, {
                                     "recipe_id": recipe_id, "ingredient_name": ingredient_name,
                                     "ingredient_qty": ingredient_qty, "optional": optional
-                                }).then(window.location.href = "http://localhost:3000/editrecipes2/" + recipe_id )}
+                                }).then(window.location.href = "https://celinechow.github.io/fyp-frontend/#//editrecipes2/" + recipe_id )}
                         >Save</Button>
                         <Link to={`/editrecipes2/${recipe_id}`}><Button variant="danger">Cancel</Button></Link>
                     </div>
@@ -216,7 +216,7 @@ function EditIngredientProd() {
                                         <td className="admin-table__body-data">{ingredientprod.swap}</td>
                                         <td className="admin-table__body-data"><Button variant="danger" 
                                         onClick={()=>deleteIngredientProdbyId(ingredientprod.ingredientprod_id)
-                                        .then(window.location.href="http://localhost:3000/editingredientprod/"+ingredient_id)}>Delete</Button></td>
+                                        .then(window.location.href="https://celinechow.github.io/fyp-frontend/#//editingredientprod/"+ingredient_id)}>Delete</Button></td>
                                     </tr>
                                 ))}
                             </tbody>
@@ -267,7 +267,7 @@ function EditIngredientProd() {
                             <Button onClick={() => addIngredientProd({
                                 ingredient_id,
                                 recipe_id, stock_id, swap
-                            }).then(window.location.href="http://localhost:3000/editingredientprod/" + ingredient_id)}>Add new ingredient</Button>
+                            }).then(window.location.href="https://celinechow.github.io/fyp-frontend/#//editingredientprod/" + ingredient_id)}>Add new ingredient</Button>
                             <Link to={`/editrecipes2/${recipe_id}`}><Button variant="danger">Cancel</Button></Link>
                         </div>
                     </div>

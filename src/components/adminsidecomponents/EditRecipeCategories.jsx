@@ -9,14 +9,14 @@ function EditRecipeCategories() {
     const [recipeCategories, setRecipeCategories] = useState([])
 
     const onBack = () => {
-        window.location.href = 'http://localhost:3000/managerecipes'
+        window.location.href = 'https://celinechow.github.io/fyp-frontend/#//managerecipes'
     }
 
     const onAdd = () => {
         console.log(newCategory)
         addRecipeCategory({ "rcat_name": newCategory })
             .then(
-                window.location.href = 'http://localhost:3000/managerecipes'
+                window.location.href = 'https://celinechow.github.io/fyp-frontend/#//managerecipes'
             )
     }
 

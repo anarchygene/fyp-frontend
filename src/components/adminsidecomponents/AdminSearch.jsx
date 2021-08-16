@@ -21,7 +21,7 @@ function AdminSearch({ getAdminDetail }) {
 
     const onSearch = () => {
         search = newSearch
-        window.location.href = "http://localhost:3000/searchadmin/" + search
+        window.location.href = "https://celinechow.github.io/fyp-frontend/#//searchadmin/" + search
     }
 
     useEffect(() => {

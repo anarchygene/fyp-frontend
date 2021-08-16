@@ -104,7 +104,7 @@ function EditRecipes2() {
                 addIngredient({
                     "recipe_id": recipe_id, "ingredient_name": ingredient_name,
                     "ingredient_qty": ingredient_qty, "optional": optional
-                }).then(window.location.href = "http://localhost:3000/editrecipes2/" + recipe_id)}
+                }).then(window.location.href = "https://celinechow.github.io/fyp-frontend/#//editrecipes2/" + recipe_id)}
                 >Save</Button>
                 <Button variant="danger" onClick={() => setAdd(!add)}>Cancel</Button>
                 </div>

@@ -10,7 +10,7 @@ function RecipeSearch({ recipes, getRecipeDetail, searchRecipe }) {
 
     const onSearch = () => {
         search = newSearch
-        window.location.href = "http://localhost:3000/searchrecipe/" + search
+        window.location.href = "https://celinechow.github.io/fyp-frontend/#//searchrecipe/" + search
     }
 
     useEffect(() => {

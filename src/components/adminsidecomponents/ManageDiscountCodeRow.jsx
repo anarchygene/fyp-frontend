@@ -30,7 +30,7 @@ function ManageDiscountCodeRow({ sn, discountCode }) {
             <div className="popup-card">
                 <h3 className="popup-card__header">Confirm Delete?</h3>
                 <Button className="popup-card__button" onClick={() => deleteDiscountbyId(id)
-                    .then(window.location.href = 'http://localhost:3000/managediscountcode')
+                    .then(window.location.href = 'https://celinechow.github.io/fyp-frontend/#//managediscountcode')
                     } type="submit">OK</Button>
                 <Button className="popup-card__button" onClick={close}>Cancel</Button>
             </div>

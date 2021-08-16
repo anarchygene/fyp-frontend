@@ -20,11 +20,11 @@ const AdminRecipeDetails2 = () => {
     const [ingredients, setIngredients] = useState([])
     
     const onBack = () => {
-        window.location.href = 'http://localhost:3000/managerecipes'
+        window.location.href = 'https://celinechow.github.io/fyp-frontend/#//managerecipes'
     }
 
     const done = () => {
-        window.location.href = 'http://localhost:3000/managerecipes'
+        window.location.href = 'https://celinechow.github.io/fyp-frontend/#//managerecipes'
     }
 
 

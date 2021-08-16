@@ -20,7 +20,7 @@ function EditRecipeCategoriesRow({id, name, index}) {
         console.log(id + catName)
         updateRecipeCategoryById({"rcat_id": id, "rcat_name": catName})
         .then(
-            window.location.href = 'http://localhost:3000/managerecipes'
+            window.location.href = 'https://celinechow.github.io/fyp-frontend/#//managerecipes'
         )
     }
 
@@ -72,7 +72,7 @@ function EditRecipeCategoriesRow({id, name, index}) {
             <div className="popup-card">
                 <h3 className="popup-card__header">Confirm Delete?</h3>
                 <Button className="popup-card__button" type="submit" onClick={() => deleteRecipeCategorybyId(id)
-                    .then(window.location.href = 'http://localhost:3000/managerecipes')
+                    .then(window.location.href = 'https://celinechow.github.io/fyp-frontend/#//managerecipes')
                     } >OK</Button>
                 <Button className="popup-card__button" onClick={close}>Cancel</Button>
             </div>

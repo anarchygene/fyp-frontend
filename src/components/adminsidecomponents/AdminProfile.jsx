@@ -52,7 +52,7 @@ export default function AdminProfile() {
 
     const adminLogout = () => {
         localStorage.clear()
-        window.location.href = 'http://localhost:3000/adminlogin'
+        window.location.href = 'https://celinechow.github.io/fyp-frontend/#//adminlogin'
     }
 
     return (

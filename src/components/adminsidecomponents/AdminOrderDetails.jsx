@@ -13,7 +13,7 @@ function AdminOrderDetails() {
 
 
     const onBack = () => {
-        window.location.href = 'http://localhost:3000/manageorders'
+        window.location.href = 'https://celinechow.github.io/fyp-frontend/#//manageorders'
     }
 
     let status = order.status

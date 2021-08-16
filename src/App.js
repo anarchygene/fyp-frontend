@@ -212,7 +212,7 @@ const App = () => {
   const ensureAdminIsLoggedIn = () => {
     if (localStorage.getItem('access_right') === undefined || localStorage.getItem('access_right') === null) {
       alert("You are not supposed to be in the admin page")
-      window.location.href = 'http://localhost:3000/adminlogin'
+      window.location.href = 'https://celinechow.github.io/fyp-frontend/#//adminlogin'
     }
   }
   const AdminRoutes = () => {

@@ -10,7 +10,7 @@ const ProductSearch = ({ products, getProductDetail, searchProduct }) => {
 
     const onSearch = (search) => {
         search = newSearch
-        window.location.href = "http://localhost:3000/searchproduct/" + search
+        window.location.href = "https://celinechow.github.io/fyp-frontend/#//searchproduct/" + search
     }
 
     const deleteProductbyId = (product_id, data={product_id:product_id}) => {

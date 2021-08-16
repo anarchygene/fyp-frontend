@@ -65,7 +65,7 @@ function AddAdmin() {
                     onClick={() => addAdmin({
                         "first_name": firstName, "last_name": lastName,
                         "email": email, "password": password, "access_right": accessRight
-                    }).then(() => window.location.href = 'http://localhost:3000/manageadmins')}
+                    }).then(() => window.location.href = 'https://celinechow.github.io/fyp-frontend/#//manageadmins')}
                     type="submit">OK</Button>
                 <Button className="popup-card__button" onClick={close}>Cancel</Button>
             </div>

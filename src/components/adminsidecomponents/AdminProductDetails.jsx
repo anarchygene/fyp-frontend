@@ -15,7 +15,7 @@ const AdminProductDetails = () => {
     const [productSubCategories, setProductSubCategories] = useState([{ psubcat_id: 999, psubcat_name: 'No subcategory' }])
 
     const onBack = () => {
-        window.location.href = 'http://localhost:3000/manageproducts'
+        window.location.href = 'https://celinechow.github.io/fyp-frontend/#//manageproducts'
     }
 
     useEffect(() => {
@@ -93,7 +93,7 @@ const AdminProductDetails = () => {
             "psubcat_id":psubcat_id, "pcat_id":pcat_id, "product_name":product_name,
             "product_desc":product_desc, "product_img":imgname, "admin_name":admin_name, "stock_sizes": stock_sizes, "stock_prices": stock_prices
         }).then(
-            window.location.href='http://localhost:3000/manageproducts'
+            window.location.href='https://celinechow.github.io/fyp-frontend/#//manageproducts'
         )
     }
 

@@ -19,7 +19,7 @@ function UserSearch() {
 
   const onSearch = () => {
     search = newSearch
-    window.location.href = "http://localhost:3000/searchuser/" + search
+    window.location.href = "https://celinechow.github.io/fyp-frontend/#//searchuser/" + search
 }
 
 useEffect(() => {

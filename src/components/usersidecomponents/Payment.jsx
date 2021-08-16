@@ -31,7 +31,7 @@ function Payment() {
         // alert(JSON.stringify(product))
         if (products == null || product.length == 0) {
           setShow(false)
-          window.location.href = 'http://localhost:3000/shoppingcart'
+          window.location.href = 'https://celinechow.github.io/fyp-frontend/#//shoppingcart'
         } else {
           setShow(true)
           let total = 0
