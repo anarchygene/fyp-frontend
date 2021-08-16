@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/fyp-frontend/home/static/css/main.39cad421.chunk.css",
-    "main.js": "/fyp-frontend/home/static/js/main.b49c74e2.chunk.js",
-    "main.js.map": "/fyp-frontend/home/static/js/main.b49c74e2.chunk.js.map",
-    "runtime-main.js": "/fyp-frontend/home/static/js/runtime-main.71598ef4.js",
-    "runtime-main.js.map": "/fyp-frontend/home/static/js/runtime-main.71598ef4.js.map",
-    "static/css/2.0b9f71b1.chunk.css": "/fyp-frontend/home/static/css/2.0b9f71b1.chunk.css",
-    "static/js/2.1e330267.chunk.js": "/fyp-frontend/home/static/js/2.1e330267.chunk.js",
-    "static/js/2.1e330267.chunk.js.map": "/fyp-frontend/home/static/js/2.1e330267.chunk.js.map",
-    "static/js/3.16f65ce1.chunk.js": "/fyp-frontend/home/static/js/3.16f65ce1.chunk.js",
-    "static/js/3.16f65ce1.chunk.js.map": "/fyp-frontend/home/static/js/3.16f65ce1.chunk.js.map",
-    "index.html": "/fyp-frontend/home/index.html",
-    "static/css/2.0b9f71b1.chunk.css.map": "/fyp-frontend/home/static/css/2.0b9f71b1.chunk.css.map",
-    "static/css/main.39cad421.chunk.css.map": "/fyp-frontend/home/static/css/main.39cad421.chunk.css.map",
-    "static/js/2.1e330267.chunk.js.LICENSE.txt": "/fyp-frontend/home/static/js/2.1e330267.chunk.js.LICENSE.txt",
-    "static/media/logo2.4ef890c9.png": "/fyp-frontend/home/static/media/logo2.4ef890c9.png"
+    "main.css": "/fyp-frontend/static/css/main.39cad421.chunk.css",
+    "main.js": "/fyp-frontend/static/js/main.b49c74e2.chunk.js",
+    "main.js.map": "/fyp-frontend/static/js/main.b49c74e2.chunk.js.map",
+    "runtime-main.js": "/fyp-frontend/static/js/runtime-main.b29ba0c7.js",
+    "runtime-main.js.map": "/fyp-frontend/static/js/runtime-main.b29ba0c7.js.map",
+    "static/css/2.0b9f71b1.chunk.css": "/fyp-frontend/static/css/2.0b9f71b1.chunk.css",
+    "static/js/2.43655ef8.chunk.js": "/fyp-frontend/static/js/2.43655ef8.chunk.js",
+    "static/js/2.43655ef8.chunk.js.map": "/fyp-frontend/static/js/2.43655ef8.chunk.js.map",
+    "static/js/3.16f65ce1.chunk.js": "/fyp-frontend/static/js/3.16f65ce1.chunk.js",
+    "static/js/3.16f65ce1.chunk.js.map": "/fyp-frontend/static/js/3.16f65ce1.chunk.js.map",
+    "index.html": "/fyp-frontend/index.html",
+    "static/css/2.0b9f71b1.chunk.css.map": "/fyp-frontend/static/css/2.0b9f71b1.chunk.css.map",
+    "static/css/main.39cad421.chunk.css.map": "/fyp-frontend/static/css/main.39cad421.chunk.css.map",
+    "static/js/2.43655ef8.chunk.js.LICENSE.txt": "/fyp-frontend/static/js/2.43655ef8.chunk.js.LICENSE.txt",
+    "static/media/logo2.4ef890c9.png": "/fyp-frontend/static/media/logo2.4ef890c9.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.71598ef4.js",
+    "static/js/runtime-main.b29ba0c7.js",
     "static/css/2.0b9f71b1.chunk.css",
-    "static/js/2.1e330267.chunk.js",
+    "static/js/2.43655ef8.chunk.js",
     "static/css/main.39cad421.chunk.css",
     "static/js/main.b49c74e2.chunk.js"
   ]
