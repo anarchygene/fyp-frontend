@@ -151,7 +151,7 @@ const Login = () => {
             .then((json) => {
                 // alert(JSON.stringify(json))
                 window.localStorage.setItem('cartId', json.insertId)
-                window.location.href = 'https://celinechow.github.io/fyp-frontend/#//home'
+                window.location.href = 'https://celinechow.github.io/fyp-frontend/#/home'
             }).catch((err) => {
                 alert(`Error at addCart: ${err}`)
                 console.log(err);
@@ -173,7 +173,7 @@ const Login = () => {
                     }
                     cartItems = JSON.parse(window.localStorage.getItem('cartItems'))
                     if (cartItems.length == 0) {
-                        window.location.href = 'https://celinechow.github.io/fyp-frontend/#//home'
+                        window.location.href = 'https://celinechow.github.io/fyp-frontend/#/home'
                     } else {
                         cartItems.map((cartItem) => {
                             let letAdd = true
@@ -191,7 +191,7 @@ const Login = () => {
                                 quantity: cartItem.quantity })
                             }
                         })
-                        window.location.href = 'https://celinechow.github.io/fyp-frontend/#//home'
+                        window.location.href = 'https://celinechow.github.io/fyp-frontend/#/home'
                         localStorage.removeItem('cartItems')
                     }
                     resolve(json)
