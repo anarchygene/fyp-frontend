@@ -163,24 +163,24 @@ function Payment() {
               <Form style={{ paddingLeft:'2.5vw' }} className="user-form__delivery">
                 <Form.Group className="user-form__group">
                   <Form.Label className="user-form__label">Shipping Address</Form.Label>
-                  <Form.Control className="user-form__input" placeholder="Enter your shipping address here." onChange={(a) => setAddress(a.target.value)}></Form.Control>
+                  <Form.Control className="user-form__input" placeholder="Enter your shipping address here." onChange={(a) => setAddress(a.target.value)} value={address}></Form.Control>
                 </Form.Group>
                 <Form.Group className="user-form__group">
                   <Form.Label className="user-form__label">Unit No.</Form.Label>
-                  <Form.Control className="user-form__input" placeholder="Enter your unit number here." onChange={(a) => setUnitnum(a.target.value)}></Form.Control>
+                  <Form.Control className="user-form__input" placeholder="Enter your unit number here." onChange={(a) => setUnitnum(a.target.value)} value={unitnum}></Form.Control>
                 </Form.Group>
                 <Form.Group className="user-form__group">
                   <Form.Label className="user-form__label">Postal Code</Form.Label>
-                  <Form.Control className="user-form__input" placeholder="Enter your postal code here." onChange={(a) => setPostcode(a.target.value)}></Form.Control>
+                  <Form.Control className="user-form__input" placeholder="Enter your postal code here." onChange={(a) => setPostcode(a.target.value)} value={postcode}></Form.Control>
                 </Form.Group>
                 <Form.Group className="user-form__group">
                   <Form.Label className="user-form__label">Delivery Date</Form.Label>
                   <br></br>
-                  <DatePicker className="user-form__date" selected={startDate} onChange={(date) => setStartDate(date)} />
+                  <DatePicker className="user-form__date" selected={startDate} onChange={(date) => setStartDate(date)} value={startDate}  />
                 </Form.Group>
                 <Form.Group className="user-form__group">
                   <Form.Label className="user-form__label">Delivery Time</Form.Label>
-                  <Form.Control className="user-form__input" placeholder="Enter in 24-hr format (e.g. 16:00-17:00)" onChange={(a) => setTime(a.target.value)}></Form.Control>
+                  <Form.Control className="user-form__input" placeholder="Enter in 24-hr format (e.g. 16:00-17:00)" onChange={(a) => setTime(a.target.value)} value={time}></Form.Control>
                 </Form.Group>
               </Form>
             </Row>

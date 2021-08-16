@@ -154,7 +154,7 @@ function AdminSidebar() {
                             </Accordion.Header>
                         </Link>
                     </Accordion.Item>)}
-                <Accordion.Item  className="sidebar__item" eventKey='0'>
+                {/* <Accordion.Item  className="sidebar__item" eventKey='0'>
                     <Link 
                         to={{
                             pathname:`/createpasswordadmin`
@@ -165,7 +165,7 @@ function AdminSidebar() {
                                 </div>
                             </Accordion.Header>
                     </Link>       
-                </Accordion.Item>    
+                </Accordion.Item>     */}
                 <Accordion.Item  className="sidebar__item" eventKey='0'>
                     <Link 
                         to={{

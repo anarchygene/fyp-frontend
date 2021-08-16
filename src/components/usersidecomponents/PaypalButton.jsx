@@ -140,7 +140,7 @@ function PaypalButton({ product, orderInfo }) {
             .then(res => res.json())
             .then((json) => {
             }).catch((err) => {
-                alert(`Error at sendEmail(Invoicing): ${err}`)
+                // alert(`Error at sendEmail(Invoicing): ${err}`)
                 console.log(err);
             });
     }
@@ -324,7 +324,7 @@ function PaypalButton({ product, orderInfo }) {
                                         <tr class="total">
                                                         <td></td>
                                     
-                                                        <td>Total: $${Number(orderData.total_amount).toFixed(2)}</td>
+                                                        <td><b>Total: $${Number(orderData.total_amount).toFixed(2)}</b></td>
                                                     </tr>
                                                 </table>
                                             </div>
