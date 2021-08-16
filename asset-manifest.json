@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/fyp-frontend/land/static/css/main.39cad421.chunk.css",
-    "main.js": "/fyp-frontend/land/static/js/main.b49c74e2.chunk.js",
-    "main.js.map": "/fyp-frontend/land/static/js/main.b49c74e2.chunk.js.map",
+    "main.js": "/fyp-frontend/land/static/js/main.b7705cd1.chunk.js",
+    "main.js.map": "/fyp-frontend/land/static/js/main.b7705cd1.chunk.js.map",
     "runtime-main.js": "/fyp-frontend/land/static/js/runtime-main.063cd06b.js",
     "runtime-main.js.map": "/fyp-frontend/land/static/js/runtime-main.063cd06b.js.map",
     "static/css/2.0b9f71b1.chunk.css": "/fyp-frontend/land/static/css/2.0b9f71b1.chunk.css",
@@ -21,6 +21,6 @@
     "static/css/2.0b9f71b1.chunk.css",
     "static/js/2.28cb0c22.chunk.js",
     "static/css/main.39cad421.chunk.css",
-    "static/js/main.b49c74e2.chunk.js"
+    "static/js/main.b7705cd1.chunk.js"
   ]
 }
