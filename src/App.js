@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
-import { BrowserRouter as Router, Switch, Route, Redirect, useHistory, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Redirect, useHistory, Link, HashRouter } from "react-router-dom";
 
 //User Side Components
 import Navigation from './components/usersidecomponents/Navbar.jsx';
@@ -399,7 +399,7 @@ const App = () => {
 
   return (
     <Container fluid="wrapper">
-      <Router>
+      <HashRouter>
         <Switch>
 
           <Route path="/adminlogin">
@@ -412,7 +412,7 @@ const App = () => {
             <UserRoutes />
           </Route>
         </Switch>
-      </Router>
+      </HashRouter>
     </Container>
   );
 }
