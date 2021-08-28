@@ -10,7 +10,7 @@ function ProductCardAdmin({ id, name, img, deleteFunction, price, size}) {
         return (
             <div className="popup-card">
                 <h3 className="popup-card__header">Confirm Delete?</h3>
-                <Button className="popup-card__button" onClick={() => deleteFunction(id).then(window.location.href='https://celinechow.github.io/fyp-frontend/#//manageproducts')} type="submit">OK</Button>
+                <Button className="popup-card__button" onClick={() => deleteFunction(id).then(window.location.href='https://celinechow.github.io/fyp-frontend/#/manageproducts')} type="submit">OK</Button>
                 <Button className="popup-card__button" onClick={close}>Cancel</Button>
             </div>
         )

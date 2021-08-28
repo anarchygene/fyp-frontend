@@ -76,7 +76,7 @@ function EditAdmins() {
                     access_right: access_right, email: admin.email,
                     first_name: admin.first_name, last_name: admin.last_name
                 })
-                    .then(window.location.href = 'https://celinechow.github.io/fyp-frontend/#//manageadmins')
+                    .then(window.location.href = 'https://celinechow.github.io/fyp-frontend/#/manageadmins')
                 }>
                 Submit
             </Button>

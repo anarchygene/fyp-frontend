@@ -12,7 +12,7 @@ function EditProductCategories() {
     const [productSubcategory, setProductSubcategory] = useState("")
 
     const onBack = () => {
-        window.location.href = 'https://celinechow.github.io/fyp-frontend/#//manageproducts'
+        window.location.href = 'https://celinechow.github.io/fyp-frontend/#/manageproducts'
     }
 
     useEffect(() => {
@@ -204,13 +204,13 @@ function EditProductCategories() {
                                 </Form.Group>
                                 <Button onClick={() => updateProductCategory(productCategories.pcat_id, { pcat_name: productCategory })}>Save</Button>
                                 <CustomToggle eventKey={productCategories.pcat_id}>Add subcat</CustomToggle>
-                                <Button variant="danger" onClick={() => deleteProductCategory(productCategories.pcat_id).then(window.location.href='https://celinechow.github.io/fyp-frontend/#//editproductcat')}>Delete</Button>
+                                <Button variant="danger" onClick={() => deleteProductCategory(productCategories.pcat_id).then(window.location.href='https://celinechow.github.io/fyp-frontend/#/editproductcat')}>Delete</Button>
                             </Card.Header>
                             <Accordion.Collapse eventKey={productCategories.pcat_id}>
                                 <Form.Group>
                                     <Form.Control type="name" className="admin-form__input" placeholder="Enter product subcategory" required
                                         value={newSubCategory} onChange={(e) => setNewSubCategory(e.target.value)} />
-                                    <Button onClick={() => addProductSubCategory({ pcat_id: productCategories.pcat_id, psubcat_name: newSubCategory }).then(window.location.href='https://celinechow.github.io/fyp-frontend/#//editproductcat')}>Save</Button>
+                                    <Button onClick={() => addProductSubCategory({ pcat_id: productCategories.pcat_id, psubcat_name: newSubCategory }).then(window.location.href='https://celinechow.github.io/fyp-frontend/#/editproductcat')}>Save</Button>
                                 </Form.Group>
                             </Accordion.Collapse>
                         </Card>
@@ -221,8 +221,8 @@ function EditProductCategories() {
                                     <Form.Control type="name" className="admin-form__input" placeholder={productSubCategory.psubcat_name} required
                                      onChange={(e) => setProductSubcategory(e.target.value)} />
                                 </Form.Group>
-                                <Button onClick={() => updateProductSubCategory(productSubCategory.psubcat_id, { pcat_id: productSubCategory.pcat_id, psubcat_name: productSubcategory }).then(window.location.href='https://celinechow.github.io/fyp-frontend/#//editproductcat')}>Save</Button>
-                                <Button onClick={() => deleteProductSubCategory(productSubCategory.psubcat_id).then(window.location.href='https://celinechow.github.io/fyp-frontend/#//editproductcat')} variant="danger">-</Button>
+                                <Button onClick={() => updateProductSubCategory(productSubCategory.psubcat_id, { pcat_id: productSubCategory.pcat_id, psubcat_name: productSubcategory }).then(window.location.href='https://celinechow.github.io/fyp-frontend/#/editproductcat')}>Save</Button>
+                                <Button onClick={() => deleteProductSubCategory(productSubCategory.psubcat_id).then(window.location.href='https://celinechow.github.io/fyp-frontend/#/editproductcat')} variant="danger">-</Button>
                                 </ListGroupItem>
                                 : null
                         ))}
@@ -241,7 +241,7 @@ function EditProductCategories() {
                                 <Form.Group>
                                     <Form.Control type="name" className="admin-form__input" placeholder="Enter product category" required
                                         value={newCategory} onChange={(e) => setNewCategory(e.target.value)} />
-                                    <Button onClick={() => addProductCategory({ "pcat_name": newCategory }).then(window.location.href='https://celinechow.github.io/fyp-frontend/#//editproductcat')}>Save</Button>
+                                    <Button onClick={() => addProductCategory({ "pcat_name": newCategory }).then(window.location.href='https://celinechow.github.io/fyp-frontend/#/editproductcat')}>Save</Button>
                                     <Button variant="danger" onClick={() => setAdd(false)}>Cancel</Button>
                                 </Form.Group>
                             </>

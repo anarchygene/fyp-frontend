@@ -23,7 +23,7 @@ const AdminRecipeDetails = () => {
     const history = useHistory();
 
     const onBack = () => {
-        window.location.href = 'https://celinechow.github.io/fyp-frontend/#//managerecipes'
+        window.location.href = 'https://celinechow.github.io/fyp-frontend/#/managerecipes'
     }
 
     useEffect(() => {

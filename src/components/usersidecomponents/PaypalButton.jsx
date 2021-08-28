@@ -17,7 +17,7 @@ function PaypalButton({ product, orderInfo }) {
                 console.log(JSON.stringify(json))
                 window.localStorage.setItem('cartId', json.insertId)
                 //console.log(orderInsert)
-                window.location.href = 'https://celinechow.github.io/fyp-frontend/#//successfulorder/' + orderInsert
+                window.location.href = 'https://celinechow.github.io/fyp-frontend/#/successfulorder/' + orderInsert
             }).catch((err) => {
                 alert(`Error at addCart: ${err}`)
                 console.log(err);

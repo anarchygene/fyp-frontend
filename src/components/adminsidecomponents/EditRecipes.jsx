@@ -23,7 +23,7 @@ function EditRecipes() {
     let admin_name = "Jennifer"
 
     const onBack = () => {
-        window.location.href = 'https://celinechow.github.io/fyp-frontend/#//managerecipes'
+        window.location.href = 'https://celinechow.github.io/fyp-frontend/#/managerecipes'
     }
 
     useEffect(() => {
@@ -478,7 +478,7 @@ function EditRecipes() {
                     }
                 </Form.Group>
 
-                <Button className="admin-form__button" variant="primary" onClick={() => updateRecipebyId(id, {rcat_id, recipe_name, prep_time, cooking_time, recipe_desc, recipe_img, recipe_step, admin_name, visibility, visibility_start_date, visibility_end_date}).then(window.location.href = "https://celinechow.github.io/fyp-frontend/#//managerecipes")}>
+                <Button className="admin-form__button" variant="primary" onClick={() => updateRecipebyId(id, {rcat_id, recipe_name, prep_time, cooking_time, recipe_desc, recipe_img, recipe_step, admin_name, visibility, visibility_start_date, visibility_end_date}).then(window.location.href = "https://celinechow.github.io/fyp-frontend/#/managerecipes")}>
                     Submit
                 </Button>
             </Form>

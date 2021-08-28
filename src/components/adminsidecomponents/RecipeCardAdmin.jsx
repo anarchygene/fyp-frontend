@@ -30,7 +30,7 @@ function RecipeCardAdmin({ id, img, name, prep_time, cooking_time, desc }) {
                 <h3 className="popup-card__header">Confirm Delete?</h3>
                 <Button className="popup-card__button" 
                 onClick={() => deleteRecipebyId(id)
-                .then(window.location.href = 'https://celinechow.github.io/fyp-frontend/#//managerecipes')} 
+                .then(window.location.href = 'https://celinechow.github.io/fyp-frontend/#/managerecipes')} 
                 type="submit">OK</Button>
                 <Button className="popup-card__button" onClick={close}>Cancel</Button>
             </div>

@@ -29,7 +29,7 @@ function EditAdminProfile({admin_id}) {
             <div className="popup-card">
                 <h3 className="popup-card__header">Confirm Details?</h3>
                 <Button className="popup-card__button" onClick={() => updateAdminPasswordbyId(admin_id, { password: newPass })
-                .then(window.location.href = 'https://celinechow.github.io/fyp-frontend/#//adminprofile')}>OK</Button>
+                .then(window.location.href = 'https://celinechow.github.io/fyp-frontend/#/adminprofile')}>OK</Button>
                 <Button className="popup-card__button" onClick={close}>Cancel</Button>
             </div>
         )

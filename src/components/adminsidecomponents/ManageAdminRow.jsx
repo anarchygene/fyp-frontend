@@ -26,7 +26,7 @@ function ManageAdminRow({ admins, sn, getAdminDetail }) {
         return (
             <div className="popup-card">
                 <h3 className="popup-card__header">Confirm Delete?</h3>
-                <Button className="popup-card__button" type="submit" onClick={() => deleteAdminbyId(id).then(window.location.href = 'https://celinechow.github.io/fyp-frontend/#//manageadmins')}>OK</Button>
+                <Button className="popup-card__button" type="submit" onClick={() => deleteAdminbyId(id).then(window.location.href = 'https://celinechow.github.io/fyp-frontend/#/manageadmins')}>OK</Button>
                 <Button className="popup-card__button" onClick={close}>Cancel</Button>
             </div>
         )

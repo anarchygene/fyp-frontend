@@ -60,7 +60,7 @@ function EditDiscountDetails() {
 
     const onSubmit = () => {
         updateDiscountById({ discount_name, discount_code, discount_amount, "active": active ? 1 : 0, discount_id })
-        .then(() => window.location.href = 'https://celinechow.github.io/fyp-frontend/#//managediscountcode')
+        .then(() => window.location.href = 'https://celinechow.github.io/fyp-frontend/#/managediscountcode')
     }
 
     let [editName, setEditName] = useState(false)

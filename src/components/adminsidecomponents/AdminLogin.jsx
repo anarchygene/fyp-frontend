@@ -102,7 +102,7 @@ const AdminLogin = () => {
                     setLetValidate(false)
                     window.localStorage.setItem("admin_id", adminInfo.admin_id)
                     window.localStorage.setItem('access_right', adminInfo.access_right)
-                    window.location.href = 'https://celinechow.github.io/fyp-frontend/#//manageadmins'
+                    window.location.href = 'https://celinechow.github.io/fyp-frontend/#/manageadmins'
                     return
                 }
                 alert("Incorrect 6-digit code")

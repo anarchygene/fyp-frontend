@@ -22,7 +22,7 @@ function EditProducts() {
     const [psubcat_name, setProductSubCategoryName] = useState('')
 
     const onBack = () => {
-        window.location.href = 'https://celinechow.github.io/fyp-frontend/#//manageproducts'
+        window.location.href = 'https://celinechow.github.io/fyp-frontend/#/manageproducts'
     }
 
     let { product_id } = useParams()
@@ -232,7 +232,7 @@ function EditProducts() {
             psubcat_id: psubcat_id, pcat_id: pcat_id, product_name: product_name,
             product_desc: product_desc, product_img: product_img, admin_name: admin_name, product_id: product_id
         }).then(
-            window.location.href = "https://celinechow.github.io/fyp-frontend/#//manageproducts"
+            window.location.href = "https://celinechow.github.io/fyp-frontend/#/manageproducts"
         )
     }
 

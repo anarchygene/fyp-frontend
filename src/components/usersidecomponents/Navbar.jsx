@@ -11,7 +11,7 @@ function Navigation() {
 
     // const onSearch = () => {
     //     search = newSearch
-    //     window.location.href = "https://celinechow.github.io/fyp-frontend/#//search/" + search
+    //     window.location.href = "https://celinechow.github.io/fyp-frontend/#/search/" + search
     // }
 
     const getCartItem = (user_id) => {
@@ -43,7 +43,7 @@ function Navigation() {
 
     const logout = () => {
         window.localStorage.clear()
-        window.location.href = 'https://celinechow.github.io/fyp-frontend/#//login'
+        window.location.href = 'https://celinechow.github.io/fyp-frontend/#/login'
     }
 
     return (
